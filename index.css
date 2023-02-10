@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Manrope:wght@800&family=Montserrat:wght@700&family=Poppins:wght@400;800&family=Rubik:wght@300;400;500&display=swap');
+
+:root{
+    --Blue: hsl(246, 80%, 60%);
+
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue--play: hsl(195, 74%, 62%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Lime-green-exercise: hsl(145, 58%, 55%);
+    --Violet-social: hsl(264, 64%, 52%);
+    --Soft-orange-self-care: hsl(43, 84% 65%);  
+    
+    
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    font-family: "Rubik", sans-serif;
+    background-color: var(--Very-dark-blue);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 8.1rem 2.4rem;
+}
+/* section .activity-tracker{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-auto-rows: max-content; 
+    grid-template-columns: 1fr;
+} */
+/* .container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2rem;
+    
+} */
+img{
+    width: 70px;
+    border-radius: 50%;
+}
+.card{
+    border-radius: 15px;
+    background-color: var(--Dark-blue);
+    
+}
+.container .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.card-header-top{
+    background-color: var(--Blue);
+    border-radius: 15px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content:space-evenly;
+    box-shadow: 20px black;
+   
+    
+       
+}
+.card-header-bottom{
+    background-color: var(--Dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+.btn{
+   font: inherit;
+   background: none;
+   border: none;
+   color: var(--Pale-Blue);
+
+}
+.btn:hover{
+    color: white;
+}
+.activity-traker-activity{
+    background-color: var(--Light-red-work);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+}
+
+.activity-bg{
+    display: grid;
+    place-items: start end;  
+}
+.activity-bg img{
+    position: relative; 
+   
+}
+.activity-info{
+    background-color: var(--Dark-blue);
+    position: relative;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    height: 100%;
+    padding: 2.8rem ;
+    border-radius: 15px;
+    padding: 2.8rem 2.4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px; 
+    cursor: pointer;   
+   
+}
+.activity-info:hover{
+    background-color: hsl(236, 37%, 36%);;
+}
+.activity-header, .activity-timeframes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center ;
+    gap: 5rem;
+}
+.activity-timeframes .activity-previous-timeframe{
+    display: flex;
+    flex-direction: row;
+}
+.activity-option{
+    transition: white 250s;
+}
+.activity-option:hover>svg path{
+    fill: white;
+}
+.activity-name{
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+.activity-current-timeframe{
+    font-size: 3rem;
+    font-weight: 300;
+    color: white;
+    line-height: 4rem;
+}
+.activity-previous-timeframe{
+    font-size: 1.25rem;
+    font-weight: 300;
+    gap: 10px;
+}
+
+
+@media screen and(min-width:500px) {
+
+    .activity-info{
+        gap: 2.4rem; 
+        padding: 2.9rem 3rem 3.2rem;
+    }
+    /* .container{
+        grid-template-columns: repeat(auto-fir, minmax(20rem, 1fr));
+        grid-template-rows: 1fr 1fr;
+        min-height: 51.8rem;
+    }    */
+}
+@media screen and(min-width:1110px) {
+    .container{
+        max-width: 111rem;
+    }   
+}
+
+
+/* https://www.youtube.com/watch?v=l9Qw8y3LfCY */
+    
+
+/* .wrapper{
+    background-color: var(--Dark-blue);
+    margin: 100px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    
+    
+    
+}
+.wrapper .heading{
+    background-color: var(--Blue);
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    
+     
+}
+.wrapper .time-table{
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+   
+    
+    
+}
+  
+    
+.wrapper .time-table h2{
+    font-weight: 400;
+}
+.box-container{
+    background-color: var(--Light-red-work);
+    background-image: url("./images/icon-work.svg");
+    
+    padding-top: 30px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 20px 20px;
+    align-items:center;
+    
+}
+.box-container .time-container{
+    background-color: var(--Dark-blue);
+    margin-top: 20px;
+    padding: 30px;
+    height: 200px;
+    display: flex;
+   
+   
+} */
+
+
+
+
+
+
+Report for
+Jeremy Robson
+
+Daily
+Weekly
+Monthly
+
+Work
+5hrs <!-- daily -->
+Previous - 7hrs <!-- daily -->
+32hrs <!-- weekly -->
+Previous - 36hrs <!-- weekly -->
+103hrs <!-- monthly -->
+Previous - 128hrs <!-- monthly -->
+
+Play
+1hr <!-- daily -->
+Previous - 2hrs <!-- daily -->
+10hrs <!-- weekly -->
+Previous - 8hrs <!-- weekly -->
+23hrs <!-- monthly -->
+Previous - 29hrs <!-- monthly -->
+
+Study
+0hrs <!-- daily -->
+Previous - 1hr <!-- daily -->
+4hrs <!-- weekly -->
+Previous - 7hrs <!-- weekly -->
+13hrs <!-- monthly -->
+Previous - 19hrs <!-- monthly -->
+
+Exercise
+1hr <!-- daily -->
+Previous - 1hr <!-- daily -->
+4hrs <!-- weekly -->
+Previous - 5hrs <!-- weekly -->
+11hrs <!-- monthly -->
+Previous - 18hrs <!-- monthly -->
+
+Social
+1hr <!-- daily -->
+Previous - 3hrs <!-- daily -->
+5hrs <!-- weekly -->
+Previous - 10hrs <!-- weekly -->
+21hrs <!-- monthly -->
+Previous - 23hrs <!-- monthly -->
+
+Self Care
+0hrs <!-- daily -->
+Previous - 1hr <!-- daily -->
+2hrs <!-- weekly -->
+Previous - 2hrs <!-- weekly -->
+7hrs <!-- monthly -->
+Previous - 11hrs <!-- monthly -->
