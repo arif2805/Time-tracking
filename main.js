@@ -5,7 +5,7 @@ let x=0;
 
 function myFunction(){
     // if (x=0){
-    //     textWeekCurrnt.innerText="5hrs";
+        textWeekCurrnt.textContent="5hrs";
     //     textWeekPast.innerText="7hrs";
     //     x=1;
     // }
