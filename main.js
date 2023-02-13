@@ -5,13 +5,13 @@ let monthly = document.getElementById("monthly");
 let x=0;
 
 function dailyTime(){
-//time for work
+        //time for work
         textWorkCurrent.innerText="5hrs"
         textWorkPast.innerText="7hrs"
- //time for play   
+        //time for play   
         textPlayCurrent.innerText="1hrs"
         textPlayPast.innerText="2hrs"
-//time for study
+        //time for study
         textStudyCurrent.innerText="0 hrs"
         textStudyPast.innerText="1hrs"
         //time for exercise
