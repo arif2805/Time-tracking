@@ -10,210 +10,211 @@
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
 </head>
 <body>
-  <div class="container">
+  <div class="container-main-box">
     <div class="card header">
       <div class="card-header-top">
         <img src="images\20220524223204_IMG_0992.jpg" alt="">
-        <div>
-          <p>Reported by</p>
+        <div class="title">
+          <p>Report for</p>
           <h1><span>Md Ariful Islam</span></h1>
         </div>
       </div>
       <div class="card-header-bottom">
         <button id="daily" class="btn" >Daily</button>
-        <button id="weekly" class="btn" >Weekly</button>
+        <button id="weekly" class="btn btn-active" >Weekly</button>
         <button id="monthly" class="btn">Monthly</button>
       </div>      
     </div>
-
-
-
-    <div class="activity-traker-activity work">
-      <div class="activity-bg">
-        <img src="images\icon-work.svg" alt="">
-      </div>
-      <div class="activity-info">
-        <header class="activity-header">
-          <h2 class="activity-name">Work</h2>
-          <div class="activity-option">
-            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-          </div>
-
-        </header>
-        <div class="activity-timeframes">
-          <h3 id="textWorkCurrent" class="activity-current-timeframe">32hrs</h3>
-          <div class="activity-previous-timeframe">
-            <p class="time-window">Last Week</p>
-            <p>-</p>
-            <p id="textWorkPast" class="time">36hrs</p>
-
-          </div>
-
+    <div class="container">
+      
+  
+  
+  
+      <div class="activity-traker-activity work">
+        <div class="activity-bg">
+          <img src="images\icon-work.svg" alt="">
         </div>
-
-      </div>
-
-    </div>
-
-    <div class="activity-traker-activity play">
-      <div class="activity-bg">
-        <img src="images\icon-play.svg" alt="">
-      </div>
-      <div class="activity-info">
-        <header class="activity-header">
-          <h2 class="activity-name">Play</h2>
-          <div class="activity-option">
-            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        <div class="activity-info">
+          <header class="activity-header">
+            <h2 class="activity-name">Work</h2>
+            <div class="activity-option">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+  
+          </header>
+          <div class="activity-timeframes">
+            <h3 id="textWorkCurrent" class="activity-current-timeframe">32hrs</h3>
+            <div class="activity-previous-timeframe">
+              <p class="time-window">Last Week</p>
+              <p>-</p>
+              <p id="textWorkPast" class="time">36hrs</p>
+  
+            </div>
+  
           </div>
-
-        </header>
-        <div class="activity-timeframes">
-          <h3 id="textPlayCurrent" class="activity-current-timeframe">10hrs</h3>
-          <div class="activity-previous-timeframe">
-            <p class="time-window">Last Week</p>
-            <p>-</p>
-            <p id="textPlayPast" text class="time">8hrs</p>
-
-          </div>
-
+  
         </div>
-
+  
       </div>
-
-    </div>
-
-    <div class="activity-traker-activity study">
-      <div class="activity-bg">
-        <img src="images\icon-study.svg" alt="">
-      </div>
-      <div class="activity-info">
-        <header class="activity-header">
-          <h2 class="activity-name">Study</h2>
-          <div class="activity-option">
-            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-          </div>
-
-        </header>
-        <div class="activity-timeframes">
-          <h3 id="textStudyCurrent" class="activity-current-timeframe">4hrs</h3>
-          <div class="activity-previous-timeframe">
-            <p class="time-window">Last Week</p>
-            <p>-</p>
-            <p id="textStudyPast" class="time">7hrs</p>
-
-          </div>
-
+  
+      <div class="activity-traker-activity play">
+        <div class="activity-bg">
+          <img src="images\icon-play.svg" alt="">
         </div>
-
-      </div>
-
-    </div>
-
-    <div class="activity-traker-activity excercise">
-      <div class="activity-bg">
-        <img src="images\icon-exercise.svg" alt="">
-      </div>
-      <div class="activity-info">
-        <header class="activity-header">
-          <h2 class="activity-name">Exercise</h2>
-          <div class="activity-option">
-            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        <div class="activity-info">
+          <header class="activity-header">
+            <h2 class="activity-name">Play</h2>
+            <div class="activity-option">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+  
+          </header>
+          <div class="activity-timeframes">
+            <h3 id="textPlayCurrent" class="activity-current-timeframe">10hrs</h3>
+            <div class="activity-previous-timeframe">
+              <p class="time-window">Last Week</p>
+              <p>-</p>
+              <p id="textPlayPast" text class="time">8hrs</p>
+  
+            </div>
+  
           </div>
-
-        </header>
-        <div class="activity-timeframes">
-          <h3 id="textExerciseCurrent" class="activity-current-timeframe">4hrs</h3>
-          <div class="activity-previous-timeframe">
-            <p class="time-window">Last Week</p>
-            <p>-</p>
-            <p id="textExercisePast" class="time">5hrs</p>
-
-          </div>
-
+  
         </div>
-
+  
       </div>
-
-    </div>
-
-    <div class="activity-traker-activity social">
-      <div class="activity-bg">
-        <img src="images\icon-social.svg" alt="">
-      </div>
-      <div class="activity-info">
-        <header class="activity-header">
-          <h2 class="activity-name">Social</h2>
-          <div class="activity-option">
-            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-          </div>
-
-        </header>
-        <div class="activity-timeframes">
-          <h3 id="textSocialCurrent" class="activity-current-timeframe">5hrs</h3>
-          <div class="activity-previous-timeframe">
-            <p class="time-window">Last Week</p>
-            <p>-</p>
-            <p id="textSocialPast" class="time">10hrs</p>
-
-          </div>
-
+  
+      <div class="activity-traker-activity study">
+        <div class="activity-bg">
+          <img src="images\icon-study.svg" alt="">
         </div>
-
-      </div>
-
-    </div>
-
-    <div class="activity-traker-activity self-care">
-      <div class="activity-bg">
-        <img src="images\icon-self-care.svg" alt="">
-      </div>
-      <div class="activity-info">
-        <header class="activity-header">
-          <h2 class="activity-name">Self Care</h2>
-          <div class="activity-option">
-            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+        <div class="activity-info">
+          <header class="activity-header">
+            <h2 class="activity-name">Study</h2>
+            <div class="activity-option">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+  
+          </header>
+          <div class="activity-timeframes">
+            <h3 id="textStudyCurrent" class="activity-current-timeframe">4hrs</h3>
+            <div class="activity-previous-timeframe">
+              <p class="time-window">Last Week</p>
+              <p>-</p>
+              <p id="textStudyPast" class="time">7hrs</p>
+  
+            </div>
+  
           </div>
-
-        </header>
-        <div class="activity-timeframes">
-          <h3 id="textSelfcareCurrent" class="activity-current-timeframe">2hrs</h3>
-          <div class="activity-previous-timeframe">
-            <p class="time-window">Last Week</p>
-            <p>-</p>
-            <p id="textSelfcarePast" class="time">2hrs</p>
-
-          </div>
-
+  
         </div>
-
+  
       </div>
-
+  
+      <div class="activity-traker-activity excercise">
+        <div class="activity-bg">
+          <img src="images\icon-exercise.svg" alt="">
+        </div>
+        <div class="activity-info">
+          <header class="activity-header">
+            <h2 class="activity-name">Exercise</h2>
+            <div class="activity-option">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+  
+          </header>
+          <div class="activity-timeframes">
+            <h3 id="textExerciseCurrent" class="activity-current-timeframe">4hrs</h3>
+            <div class="activity-previous-timeframe">
+              <p class="time-window">Last Week</p>
+              <p>-</p>
+              <p id="textExercisePast" class="time">5hrs</p>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      <div class="activity-traker-activity social">
+        <div class="activity-bg">
+          <img src="images\icon-social.svg" alt="">
+        </div>
+        <div class="activity-info">
+          <header class="activity-header">
+            <h2 class="activity-name">Social</h2>
+            <div class="activity-option">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+  
+          </header>
+          <div class="activity-timeframes">
+            <h3 id="textSocialCurrent" class="activity-current-timeframe">5hrs</h3>
+            <div class="activity-previous-timeframe">
+              <p class="time-window">Last Week</p>
+              <p>-</p>
+              <p id="textSocialPast" class="time">10hrs</p>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      <div class="activity-traker-activity self-care">
+        <div class="activity-bg">
+          <img src="images\icon-self-care.svg" alt="">
+        </div>
+        <div class="activity-info">
+          <header class="activity-header">
+            <h2 class="activity-name">Self Care</h2>
+            <div class="activity-option">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+  
+          </header>
+          <div class="activity-timeframes">
+            <h3 id="textSelfcareCurrent" class="activity-current-timeframe">2hrs</h3>
+            <div class="activity-previous-timeframe">
+              <p class="time-window">Last Week</p>
+              <p>-</p>
+              <p id="textSelfcarePast" class="time">2hrs</p>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+      
     </div>
     
-  </div>
+    <!-- <div class="box-container">
+      <!- <img class="box-img" src="images\icon-work.svg" alt=""> -->
+      <!-- <div class="time-container">
+        <div class=""> 
+          <h2>Work</h2>
+          <h1>32hrs</h1>
+          
+        </div>
+        <div class="text-right">
+          <img src="images\icon-ellipsis.svg" alt=""> 
+          <p>Last Week-8hrs</p>
+        </div>
+      </div>
   
-  <!-- <div class="box-container">
-    <!- <img class="box-img" src="images\icon-work.svg" alt=""> -->
-    <!-- <div class="time-container">
-      <div class=""> 
-        <h2>Work</h2>
-        <h1>32hrs</h1>
-        
-      </div>
-      <div class="text-right">
-        <img src="images\icon-ellipsis.svg" alt=""> 
-        <p>Last Week-8hrs</p>
-      </div>
-    </div>
+    </div> -->
+    
 
-  </div> -->
-  
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

@@ -33,8 +33,11 @@ body{
     display: grid;
     place-items: center;
     min-height: 100vh;
-    width: 100%;
+    min-width: 100%;
     padding: 8.1rem 2.4rem;
+}
+p{
+    color: var(--Pale-Blue);
 }
 /* section .activity-tracker{
     width: 100%;
@@ -68,6 +71,8 @@ img{
     justify-content: space-between;
     
 }
+
+
 .card-header-top{
     background-color: var(--Blue);
     border-radius: 15px;
@@ -75,10 +80,7 @@ img{
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content:space-evenly;
-    box-shadow: 20px black;
-   
-    
-       
+    box-shadow: 20px black;    
 }
 .card-header-bottom{
     background-color: var(--Dark-blue);
@@ -97,22 +99,28 @@ img{
    color: var(--Pale-Blue);
 
 }
-.btn:hover{
+.btn:hover, .btn:focus{
     color: white;
 }
+.btn.active{
+    color: white;
+}
+
 .activity-traker-activity{
     background-color: var(--Light-red-work);
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 15px;
+    
 }
 
 .activity-bg{
     display: grid;
-    place-items: start end;  
+    place-items: start end;
+   
 }
 .activity-bg img{
-    position: relative; 
+    position: relative;
    
 }
 .activity-info{
@@ -166,25 +174,46 @@ img{
     gap: 10px;
 }
 
+@media only screen and (min-width: 600px){
+    .container-main-box{
+        display: grid;
+        grid-template-rows: 1fr auto;
+       
+    }
+    
+    .main-container {
+        
+        display: grid;
+        width: 40%;
+        height: 10px
+    } 
+     .activity-traker-activity{
+       margin-bottom: 20px;
+     }
+    
+    .card-header-top{
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        margin-top: 2rem;
+        
+    }
+    
+}
 
-@media screen and(min-width:500px) {
+/* @media screen and(min-width:285px) {
 
     .activity-info{
         gap: 2.4rem; 
         padding: 2.9rem 3rem 3.2rem;
     }
-    /* .container{
+    .container{
         grid-template-columns: repeat(auto-fir, minmax(20rem, 1fr));
         grid-template-rows: 1fr 1fr;
         min-height: 51.8rem;
-    }    */
-}
-@media screen and(min-width:1110px) {
-    .container{
-        max-width: 111rem;
     }   
-}
-
+} */
 
 /* https://www.youtube.com/watch?v=l9Qw8y3LfCY */
     
