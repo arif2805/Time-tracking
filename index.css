@@ -1,106 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Manrope:wght@800&family=Montserrat:wght@700&family=Poppins:wght@400;800&family=Rubik:wght@300;400;500&display=swap');
-
-:root{
-    --Blue: hsl(246, 80%, 60%);
-
-    --Light-red-work: hsl(15, 100%, 70%);
-    --Soft-blue--play: hsl(195, 74%, 62%);
-    --Light-red-study: hsl(348, 100%, 68%);
-    --Lime-green-exercise: hsl(145, 58%, 55%);
-    --Violet-social: hsl(264, 64%, 52%);
-    --Soft-orange-self-care: hsl(43, 84% 65%);  
-    
-    
-    --Very-dark-blue: hsl(226, 43%, 10%);
-    --Dark-blue: hsl(235, 46%, 20%);
-    --Desaturated-blue: hsl(235, 45%, 61%);
-    --Pale-Blue: hsl(236, 100%, 87%);
-}
 *{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
-
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body{
-    font-family: "Rubik", sans-serif;
-    background-color: var(--Very-dark-blue);
+    background-color: hsl(226, 43%, 10%);
+    color: hsl(236, 100%, 87%);
+}
+h2, h3{
     color: white;
-    font-size: 18px;
-    font-weight: 500;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+
+.container>div{
+    /* background: cornflowerblue; */
+    
    
 }
-p{
-    color: var(--Pale-Blue);
+.container{
+    display: grid;
+    gap: 15px;
+    grid-auto-rows: 250px;
+    margin: 4rem 2rem;
+  
 }
-     
-
-@media(min-width: 650px){
-    .container-main-box{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2,minmax(100px, auto));
-        grid-gap:20px;
-        max-width: 960px;
-        margin: 2rem auto;
-    }
-    .one{
-        background-color:hsl(235, 46%, 20%);
-        grid-row: 1/3;
-    }
-    .card-header-bottom{
-        background-color: var(--Dark-blue);
-        display: flex;
-        flex-direction: column;
-        padding: 2rem ;
-        justify-content:left;
-        align-items: flex-start;
-        gap: 20px;
-        border-radius: 0 0 15px 15px;
-        
-    }
-    .activity-header{
-        display: flex;
-        justify-content: space-between;
-    }
-
-}
-
-
-
-.activity-bg{
-    display: inline-block;
-}
-
-.activity-bg img{
-    width: 40px;
-    height:40px;
-   
-   
-   
-}
-.card{
+.div1{
+    background-color:  hsl(235, 46%, 20%);
     border-radius: 15px;
 }
-
-.card-header-top{
-    background-color: var(--Blue);
-    border-radius: 15px;  
-    padding: 4rem 2rem;
+.div2{
+    background-color:   hsl(15, 100%, 70%);
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
 }
-.card-header-top img{
+.div3{
+    background-color:  hsl(195, 74%, 62%);
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+}
+.div4{
+    background-color:  hsl(348, 100%, 68%);
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+}
+/* .div1{
+    background-color:  hsl(235, 46%, 20%);
+    border-radius: 18px;
+} */
+.div5{
+    background-color:  hsl(145, 58%, 55%);
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+}
+.div6{
+    background-color:  hsl(264, 64%, 52%);
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+}
+.div7{
+    background-color:  hsl(43, 84%, 65%);
+    border-radius: 18px; 
+    position: relative;
+    overflow: hidden; 
+    
+}
+.header-top{
+    background-color: hsl(246, 80%, 60%);
+    padding: 2rem;
+    display: flex;
+    justify-content:center;
+    border-radius: 15px;
+    gap: 20px;
+    
+}
+
+.header-top img{
     width: 70px;
     border-radius: 50%;
 }
 
+.header-bottom{
+    text-align: center;
+    margin: 3rem 0; 
+}
 .btn{
-   font: inherit;
-   background: none;
-   border: none;
-   color: var(--Pale-Blue);
-
+    padding-inline:20px;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color:  hsl(236, 100%, 87%);;
+    
 }
 .btn:hover, .btn:focus{
     color: white;
@@ -108,208 +110,101 @@ p{
 .btn.active{
     color: white;
 }
-
-.activity-traker-activity{
-    background-color: var(--Light-red-work);
+.box-top{
+    background-color:hsl(235, 46%, 20%);
     border-radius: 15px;
-    margin: 0;
-    position: relative;
-  
-   
-    
-}
-.activity-info{
-    background-color: var(--Dark-blue);
-    border-radius: 15px;
-    cursor: pointer;
-    width: 100%;
-    padding: 20px 20px 50px 20px;
     position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    top: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
    
-   
-  
 }
 
-.activity-bg{
-    display: grid;
-    place-items: start end;
-    
-   
+.box-img{
+    position: absolute;
+    right: 10px;
+    top: -10px;   
 }
-
-
-.activity-info:hover{
-    background-color: hsl(236, 37%, 36%);;
-}
-
 .activity-option{
-    transition: white 250s;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0;
+   
 }
-.activity-option:hover>svg path{
-    fill: white;
+.activity-timeframes{
+    display: flex;
+    justify-content: space-between;
+   margin: 0;
+    align-items: center;
 }
-.activity-name{
-    font-size: 1.75rem;
-    font-weight: 400;
+.activity-previous-timeframe{
+    display: flex;
+    gap: 10px;
+
+}
+@media (min-width:650px) {
+    .header-top{
+        background-color: hsl(246, 80%, 60%);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        border-radius: 15px;
+        gap: 20px;
+        font-size: 16px;  
+    }
+    .header-bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: start;
+        gap: 30px;
+        margin: 3rem 1rem;
+        font-size: 1.7rem;
+    }
+    .activity-timeframes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+       align-items: start;
+       margin-top: 10px;
+    }
+    .activity-previous-timeframe{
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
     
-}
-.activity-current-timeframe{
-    font-size: 3rem;
-    font-weight: 300;
-    color: white;
-    padding: .50rem 0; 
+    }
+
 }
 
-.activity-previous-timeframe{
-    display: inline-flex;
-    gap: 5px;
-    font-size: 1rem;    
+@media (min-width:650px) {
+    .container{
+        max-width: 960px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        /* grid-auto-rows: minmax( 200px, auto); */
+        grid-template-rows: repeat(2, minmax(250px, auto)); 
+        gap: 20px;
+        margin: 3rem auto;
+    }
+    .div1{
+        grid-row: 1/3;
+    }
+
 }
+
 .attribution{
     text-align: center;
     padding: 20px auto;
     margin: 2rem;
     font-size: .75rem;
-    
-
 }
-
-   
-    
-    
-
-/* @media screen and(min-width:285px) {
-
-    .activity-info{
-        gap: 2.4rem; 
-        padding: 2.9rem 3rem 3.2rem;
-    }
-    .container{
-        grid-template-columns: repeat(auto-fir, minmax(20rem, 1fr));
-        grid-template-rows: 1fr 1fr;
-        min-height: 51.8rem;
-    }   
-} */
-
-/* https://www.youtube.com/watch?v=l9Qw8y3LfCY */
-    
-
-/* .wrapper{
-    background-color: var(--Dark-blue);
-    margin: 100px 20px 0 20px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    text-align: center;
-    align-items: center;
-    
-    
-    
-}
-.wrapper .heading{
-    background-color: var(--Blue);
-    padding: 30px;
-    display: flex;
-    gap: 20px;
-    border-radius: 10px;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    
-     
-}
-.wrapper .time-table{
-    display: flex;
-    gap: 60px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding: 20px;
-   
-    
-    
-}
-  
-    
-.wrapper .time-table h2{
-    font-weight: 400;
-}
-.box-container{
-    background-color: var(--Light-red-work);
-    background-image: url("./images/icon-work.svg");
-    
-    padding-top: 30px;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    margin: 20px 20px;
-    align-items:center;
-    
-}
-.box-container .time-container{
-    background-color: var(--Dark-blue);
-    margin-top: 20px;
-    padding: 30px;
-    height: 200px;
-    display: flex;
-   
-   
-} */
-
-
-
-
-
-
-Report for
-Jeremy Robson
-
-Daily
-Weekly
-Monthly
-
-Work
-5hrs <!-- daily -->
-Previous - 7hrs <!-- daily -->
-32hrs <!-- weekly -->
-Previous - 36hrs <!-- weekly -->
-103hrs <!-- monthly -->
-Previous - 128hrs <!-- monthly -->
-
-Play
-1hr <!-- daily -->
-Previous - 2hrs <!-- daily -->
-10hrs <!-- weekly -->
-Previous - 8hrs <!-- weekly -->
-23hrs <!-- monthly -->
-Previous - 29hrs <!-- monthly -->
-
-Study
-0hrs <!-- daily -->
-Previous - 1hr <!-- daily -->
-4hrs <!-- weekly -->
-Previous - 7hrs <!-- weekly -->
-13hrs <!-- monthly -->
-Previous - 19hrs <!-- monthly -->
-
-Exercise
-1hr <!-- daily -->
-Previous - 1hr <!-- daily -->
-4hrs <!-- weekly -->
-Previous - 5hrs <!-- weekly -->
-11hrs <!-- monthly -->
-Previous - 18hrs <!-- monthly -->
-
-Social
-1hr <!-- daily -->
-Previous - 3hrs <!-- daily -->
-5hrs <!-- weekly -->
-Previous - 10hrs <!-- weekly -->
-21hrs <!-- monthly -->
-Previous - 23hrs <!-- monthly -->
-
-Self Care
-0hrs <!-- daily -->
-Previous - 1hr <!-- daily -->
-2hrs <!-- weekly -->
-Previous - 2hrs <!-- weekly -->
-7hrs <!-- monthly -->
-Previous - 11hrs <!-- monthly -->
