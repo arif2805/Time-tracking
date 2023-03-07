@@ -1,4 +1,4 @@
-https://arif2805.github.io/Time-traking/
+https://arif2805.github.io/Time-tracking/
 # Frontend Mentor - Time tracking dashboard
 
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
